@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #e8f1ff, #f4f8ff);
+    min-height: 100vh;
+    display: block;
+    padding: 24px;
+}
+
+.card {
+    width: 100%;
+    max-width: 540px;
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 24px;
+    box-shadow: 0 10px 30px rgba(30, 64, 175, 0.15);
+}
+
+.card-grande {
+    max-width: 900px;
+    margin: 12px auto 0;
+}
+
+h1 {
+    font-size: 1.35rem;
+    margin-bottom: 8px;
+    color: #0f172a;
+}
+
+h2 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #0f172a;
+}
+
+p.descripcion {
+    font-size: 0.95rem;
+    color: #475569;
+    margin-bottom: 16px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 6px;
+    color: #1e293b;
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+button {
+    width: 100%;
+    margin-top: 14px;
+    padding: 11px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+#resul {
+    margin-top: 14px;
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 8px;
+    padding: 12px;
+    color: #1e3a8a;
+    white-space: pre-line;
+}
+
+.extra {
+    margin-top: 14px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 12px;
+    color: #334155;
+    white-space: pre-line;
+}
+
+.menu-superior {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 14px 0 18px;
+}
+
+.app-nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: rgba(244, 248, 255, 0.95);
+    backdrop-filter: blur(2px);
+    border: 1px solid #dbeafe;
+    border-radius: 12px;
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.tab {
+    width: auto;
+    margin-top: 0;
+    padding: 8px 12px;
+    border-radius: 999px;
+    background: #dbeafe;
+    color: #1e3a8a;
+}
+
+.tab:hover {
+    background: #bfdbfe;
+}
+
+.tab.active {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+.panel {
+    display: none;
+}
+
+.panel.activo {
+    display: block;
+}
